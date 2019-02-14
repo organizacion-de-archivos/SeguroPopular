@@ -9,7 +9,7 @@ char lineas[100];
 int i;
 
 ///////START///////////
-
+////////////STOP//////////////////
 arcsalida = fopen("lineas.txt","r");
 
 for(i=1;i<=5;i++)
