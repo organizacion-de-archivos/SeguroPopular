@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+main()
+{
+//////VARIABLES////////
+
+FILE *arcsalida;
+char lineas[100];
+int i;
+
+///////START///////////
+
+arcsalida = fopen("lineas.txt","r");
+
+for(i=1;i<=5;i++)
+	{
+	fgets(lineas,100,arcsalida);
+	printf(lineas);
+	//scanf("%s",lineas);
+	//fprintf(arcsalida,"%s\n",lineas);		
+		}	
+	
+	printf("Se han escrito %d lineas en el archivo \n",i);
+	fclose(arcsalida);
+	
+	/////////FINISH////////////	
+	
+}
